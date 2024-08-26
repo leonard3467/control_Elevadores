@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #FF6600; /* Color similar al de los botones en la imagen */
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 15px 20px; /* Aumenta el padding para mayor comodidad */
+  background: #FF6600; /* Fondo naranja para las sucursales */
+  color: white;
+  margin-bottom: 10px; /* Aumenta el margen para mayor separación */
+  cursor: pointer;
+  border-radius: 8px; /* Esquinas redondeadas */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+}
+
+ul li:hover {
+  background: #e55b00; /* Un color ligeramente más oscuro al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto de elevación */
+}
+
+/* Estilo adicional para los enlaces dentro de los <li> si los tienes */
+ul li a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: white; /* Mantiene el texto en blanco */
+  font-weight: bold; /* Texto en negrita */
+  display: block; /* Hace que todo el área del li sea clicable */
+}

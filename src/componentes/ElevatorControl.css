@@ -1,0 +1,49 @@
+/* Contenedor de los botones */
+.toggle-buttons {
+  display: flex;
+  flex-direction: column; /* Organiza los botones en columna */
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+/* Contenedor de cada interruptor con su etiqueta */
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el interruptor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+/* Estilo del slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Color gris claro para el estado desactivado */
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Cambiar el color del slider cuando se selecciona según la clase asignada */
+input:checked + .slider.gray {
+  background-color: #808080; /* Cambia a gris cuando está seleccionado */
+}
+
+input:checked + .slider.red {
+  background-color: #ff0000; /* Cambia a rojo cuando está seleccionado */
+}
+
+input:checked + .slider.green {
+  background-color: #008000; /* Cambia a verde cuando está seleccionado */
+}
